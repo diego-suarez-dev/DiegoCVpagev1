@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diego Suarez · Senior Electrical Design Engineer</title>
+<meta name="description" content="Diego Suarez — Electrical Systems Design Engineer. 9+ years across nuclear fusion, automotive, and industrial machinery.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="#top" class="brand" data-jump="top" style="text-decoration:none">
+      <div class="brand-mark">DS</div>
+      <div class="brand-text">
+        <div class="brand-name">Diego Suarez</div>
+        <div class="brand-sub">Electrical Systems Design Engineer</div>
+      </div>
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#experience" data-jump="experience">Experience</a>
+      <a href="#expertise" data-jump="expertise">Expertise</a>
+      <a href="#toolchain" data-jump="toolchain">Standards &amp; Tools</a>
+      <a href="#education" data-jump="education">Education</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn" href="Diego_Suarez_CV.pdf" download="Diego_Suarez_CV.pdf">
+        Download CV <span class="arrow">→</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-bg">
+    <svg viewBox="0 0 600 540" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+      <defs>
+        <pattern id="sg" width="40" height="40" patternUnits="userSpaceOnUse">
+          <path d="M 40 0 L 0 0 0 40" fill="none" stroke="var(--rule)" stroke-width="0.5"></path>
+        </pattern>
+      </defs>
+      <rect width="600" height="540" fill="url(#sg)" opacity="0.7"></rect>
+
+      <g fill="none" stroke="var(--rule)" stroke-width="1">
+        <line x1="40" y1="120" x2="560" y2="120"></line>
+        <line x1="40" y1="420" x2="560" y2="420"></line>
+
+        <!-- IC -->
+        <rect x="220" y="220" width="160" height="100"></rect>
+        <line x1="300" y1="120" x2="300" y2="220"></line>
+        <line x1="300" y1="320" x2="300" y2="420"></line>
+        <line x1="220" y1="250" x2="200" y2="250"></line>
+        <line x1="380" y1="250" x2="400" y2="250"></line>
+        <line x1="220" y1="270" x2="200" y2="270"></line>
+        <line x1="380" y1="270" x2="400" y2="270"></line>
+        <line x1="220" y1="290" x2="200" y2="290"></line>
+        <line x1="380" y1="290" x2="400" y2="290"></line>
+
+        <!-- Resistor -->
+        <line x1="120" y1="120" x2="120" y2="190"></line>
+        <rect x="108" y="190" width="24" height="50"></rect>
+        <line x1="120" y1="240" x2="120" y2="420"></line>
+
+        <!-- Capacitor -->
+        <line x1="480" y1="120" x2="480" y2="220"></line>
+        <line x1="464" y1="220" x2="496" y2="220"></line>
+        <line x1="464" y1="232" x2="496" y2="232"></line>
+        <line x1="480" y1="232" x2="480" y2="420"></line>
+
+        <!-- Junction dots -->
+        <circle cx="120" cy="120" r="2.5" fill="var(--rule)"></circle>
+        <circle cx="120" cy="420" r="2.5" fill="var(--rule)"></circle>
+        <circle cx="300" cy="120" r="2.5" fill="var(--rule)"></circle>
+        <circle cx="300" cy="420" r="2.5" fill="var(--rule)"></circle>
+        <circle cx="480" cy="120" r="2.5" fill="var(--rule)"></circle>
+        <circle cx="480" cy="420" r="2.5" fill="var(--rule)"></circle>
+      </g>
+
+      <!-- Live trace -->
+      <g fill="none" stroke="var(--accent)" stroke-width="1.5">
+        <path d="M 40 120 L 120 120 L 120 190" stroke-dasharray="280" stroke-dashoffset="280">
+          <animate attributeName="stroke-dashoffset" from="280" to="0" dur="1.6s" fill="freeze" begin="0.4s"></animate>
+        </path>
+        <path d="M 200 270 L 180 270 L 180 350 L 300 350" stroke-dasharray="240" stroke-dashoffset="240">
+          <animate attributeName="stroke-dashoffset" from="240" to="0" dur="1.6s" fill="freeze" begin="1s"></animate>
+        </path>
+      </g>
+
+      <g font-family="var(--mono)" font-size="10" fill="var(--muted-2)">
+        <text x="40" y="112">+24V</text>
+        <text x="40" y="436">0V</text>
+        <text x="232" y="240">U1</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="shell hero-inner">
+    <div class="hero-meta">
+      <span>Banbury, England</span>
+      <span>2016 → present</span>
+      <span>Nuclear · Automotive · Manufacturing</span>
+    </div>
+
+    <div class="hero-name">Diego Suarez — Electrical Systems Design Engineer</div>
+
+    <h1 class="hero-title">
+      I design electrical systems for environments where failure is <em>expensive, dangerous, or impossible to access.</em>
+    </h1>
+
+    <p class="hero-summary">Senior Electrical Systems Engineer with 9+ years across nuclear fusion, automotive, and industrial machinery. Specialising in electrical design, technical documentation, compliance, commissioning, cross-functional delivery, requirements capture, verification, DFM, and production support in safety-critical environments.</p>
+
+    <div class="hero-actions">
+      <a class="btn" href="Diego_Suarez_CV.pdf" download="Diego_Suarez_CV.pdf">
+        Download CV <span class="arrow">→</span>
+      </a>
+      <div class="contact">
+        <a href="https://linkedin.com/in/1diegosuarez" target="_blank" rel="noopener noreferrer">linkedin.com/in/1diegosuarez</a>
+      </div>
+    </div>
+
+    <div class="highlights">
+      <div class="highlights-label">Why shortlist me</div>
+      <div class="highlights-grid">
+        <div class="highlight">
+          <div class="h-key">ITER / JET</div>
+          <div class="h-val">UKAEA within the RACE department — ITER remote handling and JET pre-decommissioning.</div>
+        </div>
+        <div class="highlight">
+          <div class="h-key">Rad-hardened</div>
+          <div class="h-val">Radiation-hardened architectures for remote inspection, EN and nuclear-safety compliant.</div>
+        </div>
+        <div class="highlight">
+          <div class="h-key">100% on-time</div>
+          <div class="h-val">Dozens of automotive test rigs delivered, concept to factory commissioning.</div>
+        </div>
+        <div class="highlight">
+          <div class="h-key">2-site standardisation</div>
+          <div class="h-val">Electrical design standardised across Fortress / Sparc; ISO, CE, UKCA, IEC compliance.</div>
+        </div>
+        <div class="highlight">
+          <div class="h-key">JLR launch</div>
+          <div class="h-val">2018 Discovery Commercial launch lead; WERS / AIM2 through production ramp.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="section">
+  <div class="shell">
+    <div class="experience-grid">
+      <aside class="experience-side">
+        <div class="eyebrow">Experience</div>
+        <div class="label">Continuous</div>
+        <div class="total" style="font-size:20px">9+ years</div>
+        <div class="range">Four roles, three sectors — chronology in full.</div>
+      </aside>
+
+      <div class="timeline">
+
+        <article class="role">
+          <div class="role-head">
+            <div class="role-employer">UK Atomic Energy Authority</div>
+            <div class="role-dates">Sep 2023 — Present</div>
+          </div>
+          <div class="role-title">Senior Electrical Systems Engineer</div>
+          <div class="role-meta">
+            <span>Abingdon, UK</span>
+            <span class="sep">·</span>
+            <span>Fusion · Remote handling · Decommissioning</span>
+          </div>
+          <p class="role-summary">Design and document electrical systems within RACE for ITER robotics; radiation-hardened architectures with EN and nuclear-safety compliance; rad-hard guidance to the wider team; JET isolations and pre-decommissioning documentation across multi-disciplinary delivery.</p>
+          <ul class="role-bullets">
+            <li>Design and document RACE electrical systems supporting ITER remote-handling robotics — international fusion programme constraints.</li>
+            <li>Developed radiation-hardened architectures for remote inspection systems, EN and nuclear-safety compliant.</li>
+            <li>Provide rad-hardened electrical and electronic design guidance to the wider team.</li>
+            <li>Manage JET deplant electrical isolations and pre-decommissioning planning documentation.</li>
+            <li>Drive multi-disciplinary delivery — requirements, verification, and interface management across teams.</li>
+          </ul>
+          <div class="role-tags">
+            <span class="tag amber">Nuclear safety</span>
+            <span class="tag amber">Functional safety</span>
+            <span class="tag amber">Radiation hardening</span>
+            <span class="tag">Remote handling</span>
+            <span class="tag">EN standards</span>
+            <span class="tag">Requirements</span>
+            <span class="tag">Verification</span>
+            <span class="tag">Interface management</span>
+          </div>
+        </article>
+
+        <article class="role">
+          <div class="role-head">
+            <div class="role-employer">Fortress Technology Inc. &amp; Sparc Systems</div>
+            <div class="role-dates">Jun 2021 — Aug 2023</div>
+          </div>
+          <div class="role-title">Electrical Design Engineer</div>
+          <div class="role-meta">
+            <span>Banbury, UK</span>
+            <span class="sep">·</span>
+            <span>Food-grade machinery · Safety-critical</span>
+          </div>
+          <p class="role-summary">Two-site electrical design standardisation; validated components to ISO, CE, UKCA, IEC, and BS EN 60204-1; led LV design — schematics, panel layouts, wiring diagrams, BOMs, design reviews — supporting manufacturing, commissioning, sales, approvals, and suppliers.</p>
+          <ul class="role-bullets">
+            <li>Standardised electrical engineering design across two production sites — quality and cross-functional collaboration.</li>
+            <li>Validated safety-critical components to ISO, CE, UKCA, IEC, and BS EN 60204-1.</li>
+            <li>Led LV design: schematics, panel layouts, wiring diagrams, BOMs, and design reviews.</li>
+            <li>Supported manufacturing, commissioning, sales, approvals, and suppliers as the electrical lead.</li>
+          </ul>
+          <div class="role-tags">
+            <span class="tag">CE / UKCA</span>
+            <span class="tag">EMC</span>
+            <span class="tag">BS EN 60204-1</span>
+            <span class="tag">ISO / IEC</span>
+            <span class="tag">Panel design</span>
+            <span class="tag">BOMs</span>
+            <span class="tag">DFM</span>
+          </div>
+        </article>
+
+        <article class="role">
+          <div class="role-head">
+            <div class="role-employer">Sorion Electronics</div>
+            <div class="role-dates">Jan 2019 — May 2021</div>
+          </div>
+          <div class="role-title">Electrical Design Engineer</div>
+          <div class="role-meta">
+            <span>Birmingham, UK</span>
+            <span class="sep">·</span>
+            <span>Test rigs · CAD-to-commissioning</span>
+          </div>
+          <p class="role-summary">Automotive test rigs delivered 100% on-time; owned requirements, CAD schematics, panels, BOMs, design reviews, and commissioning support; drove DFM improvements with verification and stakeholder communication throughout.</p>
+          <ul class="role-bullets">
+            <li>Delivered automotive test rigs 100% on-time, concept through factory commissioning.</li>
+            <li>Owned requirements, CAD schematics, panels, BOMs, and design reviews.</li>
+            <li>Drove DFM improvements with mechanical engineers; lifted efficiency on design deliverables.</li>
+            <li>Provided commissioning support, verification, and stakeholder communication end-to-end.</li>
+          </ul>
+          <div class="role-tags">
+            <span class="tag">Automotive</span>
+            <span class="tag">Commissioning</span>
+            <span class="tag">EPLAN</span>
+            <span class="tag">DFM</span>
+            <span class="tag">Schematics</span>
+            <span class="tag">Verification</span>
+            <span class="tag">Requirements</span>
+          </div>
+        </article>
+
+        <article class="role">
+          <div class="role-head">
+            <div class="role-employer">Jaguar Land Rover</div>
+            <div class="role-dates">Oct 2016 — Jan 2019</div>
+          </div>
+          <div class="role-title">Technical Analyst / Engineer</div>
+          <div class="role-meta">
+            <span>United Kingdom</span>
+            <span class="sep">·</span>
+            <span>SVO · Launch</span>
+          </div>
+          <p class="role-summary">Electrical integration for the 2018 Discovery Commercial launch within Special Vehicle Operations; WERS changes, AIM2 decks, engineering builds, documentation, programme reviews, and on-build issue resolution through production ramp.</p>
+          <ul class="role-bullets">
+            <li>Led planning and electrical integration for the 2018 Discovery Commercial launch within SVO.</li>
+            <li>Managed WERS (Warranty Engineering Release System) electrical changes through ramp.</li>
+            <li>Owned AIM2 (Assembly Instruction Management) technical decks for production builds.</li>
+            <li>Raised parts orders for engineering builds at each development stage; resolved engineering issues swiftly.</li>
+            <li>Represented SVO Electrical in senior-management programme reviews; resolved on-build electrical issues.</li>
+          </ul>
+          <div class="role-tags">
+            <span class="tag">WERS</span>
+            <span class="tag">AIM2</span>
+            <span class="tag">Launch support</span>
+            <span class="tag">Production ramp</span>
+            <span class="tag">Engineering change</span>
+            <span class="tag">Automotive</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="expertise" class="section">
+  <div class="shell">
+    <div class="eyebrow">Expertise</div>
+    <h2 class="section-title">Three sectors. One systems mindset.</h2>
+    <p class="section-lede">Where I've delivered, what proves it, and the standards each domain runs under.</p>
+
+    <div class="expertise-grid">
+
+      <div class="expertise-card">
+        <div class="e-num">01 · Domain</div>
+        <div class="e-where">UKAEA</div>
+        <div class="e-label">Nuclear</div>
+        <div class="e-sub">Fusion · remote handling · decommissioning</div>
+        <p class="e-proof">Radiation-hardened architectures, ITER remote handling, JET decommissioning documentation.</p>
+        <div class="e-tags">
+          <span class="tag amber">Nuclear safety</span>
+          <span class="tag">EN standards</span>
+          <span class="tag amber">Functional safety</span>
+          <span class="tag">Rad-hardening</span>
+        </div>
+      </div>
+
+      <div class="expertise-card">
+        <div class="e-num">02 · Domain</div>
+        <div class="e-where">JLR · Sorion</div>
+        <div class="e-label">Automotive</div>
+        <div class="e-sub">Launch · test rigs · commissioning</div>
+        <p class="e-proof">2018 Discovery Commercial launch; test-rig delivery; commissioning; WERS / AIM2 change control through ramp.</p>
+        <div class="e-tags">
+          <span class="tag">Automotive</span>
+          <span class="tag">EMC</span>
+          <span class="tag">WERS</span>
+          <span class="tag">AIM2</span>
+          <span class="tag">EPLAN</span>
+        </div>
+      </div>
+
+      <div class="expertise-card">
+        <div class="e-num">03 · Domain</div>
+        <div class="e-where">Fortress / Sparc</div>
+        <div class="e-label">Manufacturing</div>
+        <div class="e-sub">Food-grade machinery · safety-critical</div>
+        <p class="e-proof">Two-site standardisation, safety-critical component validation, LV design, schematics, and panels.</p>
+        <div class="e-tags">
+          <span class="tag">BS EN 60204-1</span>
+          <span class="tag">CE / UKCA</span>
+          <span class="tag">ISO / IEC</span>
+          <span class="tag amber">Functional safety</span>
+          <span class="tag">Panel design</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="toolchain" class="section">
+  <div class="shell">
+    <div class="toolchain">
+      <aside class="toolchain-side">
+        <div class="eyebrow">Standards &amp; Tools</div>
+        <h3>The supporting toolchain</h3>
+        <p>Standards I work to, CAD I design in, and capabilities I bring across roles.</p>
+      </aside>
+
+      <div class="toolchain-grid">
+        <div class="tc-block">
+          <h4>Safety &amp; compliance <span class="count">6</span></h4>
+          <ul>
+            <li>EN / IEC 61508</li>
+            <li>BS EN 60204-1</li>
+            <li>CE / UKCA / EMC</li>
+            <li>ISO / IEC</li>
+            <li>WERS</li>
+            <li>AIM2</li>
+          </ul>
+        </div>
+        <div class="tc-block">
+          <h4>CAD &amp; software <span class="count">5</span></h4>
+          <ul>
+            <li>EPLAN</li>
+            <li>AutoCAD</li>
+            <li>Electrical CAD</li>
+            <li>NI Multisim</li>
+            <li>SolidWorks (basic)</li>
+          </ul>
+        </div>
+        <div class="tc-block">
+          <h4>Engineering capabilities <span class="count">13</span></h4>
+          <ul>
+            <li>Electrical / LV / control panel design</li>
+            <li>Schematics &amp; wiring diagrams</li>
+            <li>Requirements capture</li>
+            <li>Verification &amp; validation (V&amp;V)</li>
+            <li>DFM</li>
+            <li>DFMEA / risk assessment</li>
+            <li>Technical documentation</li>
+            <li>Design reviews</li>
+            <li>Commissioning</li>
+            <li>Installation support</li>
+            <li>Change control</li>
+            <li>Stakeholder management</li>
+            <li>Rad-hardened design</li>
+          </ul>
+        </div>
+        <div class="tc-block">
+          <h4>Business &amp; languages</h4>
+          <ul>
+            <li>MS Office</li>
+            <li>SAP</li>
+            <li style="margin-top:10px;padding-top:10px;border-top:1px solid var(--rule-soft);color:var(--muted)">
+              Languages: English (native) · Portuguese (fluent) · Spanish (conversational)
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="section">
+  <div class="shell">
+    <div class="eyebrow">Education</div>
+    <h2 class="section-title">Engineering education across two universities.</h2>
+    <p class="section-lede">Electrical and energy engineering at degree level; international high school in Shenzhen.</p>
+
+    <div class="education-list">
+      <div class="edu">
+        <div class="e-span">2013 — 2016</div>
+        <div class="e-degree">BEng (Hons.) Electrical and Electronic Engineering</div>
+        <div class="e-inst">University of Brighton</div>
+      </div>
+      <div class="edu">
+        <div class="e-span">2010 — 2013</div>
+        <div class="e-degree">BEng Energy Engineering (coursework completed)</div>
+        <div class="e-inst">Penn State</div>
+      </div>
+      <div class="edu">
+        <div class="e-span">2006 — 2010</div>
+        <div class="e-degree">International Baccalaureate / High School Diploma</div>
+        <div class="e-inst">Shenzhen International School</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="shell">
+    <div class="footer-grid">
+      <div>
+        <h6>Identity</h6>
+        <div class="f-name">Diego Suarez</div>
+        <div class="f-role">Electrical Systems Design Engineer · Banbury, England</div>
+        <p class="f-positioning">I design electrical systems for environments where failure is expensive, dangerous, or impossible to access.</p>
+      </div>
+      <div>
+        <h6>Contact</h6>
+        <a href="https://linkedin.com/in/1diegosuarez" target="_blank" rel="noopener noreferrer">linkedin.com/in/1diegosuarez</a>
+        <div style="font-size:13px;color:var(--muted);margin-top:4px">Email available on the downloaded CV.</div>
+      </div>
+      <div>
+        <h6>Document</h6>
+        <a class="f-cta" href="Diego_Suarez_CV.pdf" download="Diego_Suarez_CV.pdf">↓ Download Diego_Suarez_CV.pdf</a>
+      </div>
+    </div>
+    <div class="footer-mark">
+      <span>Systems Under Tension · Diego Suarez · 2026</span>
+      <span>One page</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var ids = ["top", "experience", "expertise", "toolchain", "education"];
+  var navLinks = document.querySelectorAll(".nav-links a");
+
+  function setActive(id) {
+    navLinks.forEach(function (a) {
+      a.classList.toggle("active", a.getAttribute("href") === "#" + id);
+    });
+  }
+
+  if ("IntersectionObserver" in window) {
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) setActive(e.target.id);
+      });
+    }, { rootMargin: "-30% 0px -55% 0px", threshold: 0 });
+    ids.forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) obs.observe(el);
+    });
+  }
+
+  document.querySelectorAll("[data-jump]").forEach(function (link) {
+    link.addEventListener("click", function (ev) {
+      var id = link.getAttribute("data-jump");
+      var el = document.getElementById(id);
+      if (!el) return;
+      ev.preventDefault();
+      var top = el.getBoundingClientRect().top + window.scrollY - 80;
+      window.scrollTo({ top: top, behavior: "smooth" });
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
