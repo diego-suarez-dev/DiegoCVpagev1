@@ -41,6 +41,8 @@ html, body {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  .hero-bg svg animate { display: none !important; }
+  .hero-bg svg [stroke-dashoffset] { stroke-dashoffset: 0 !important; }
 }
 
 a { color: inherit; }
@@ -103,7 +105,7 @@ button { font-family: inherit; }
 }
 @media (max-width: 768px) { .header-inner { padding: 12px 20px; } }
 
-.brand { display: flex; align-items: center; gap: 12px; }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
 .brand-mark {
   width: 26px; height: 26px;
   border: 1px solid var(--ink);
@@ -114,7 +116,7 @@ button { font-family: inherit; }
   background: var(--bg);
 }
 .brand-text { line-height: 1.15; }
-.brand-name { font-size: 14px; font-weight: 600; }
+.brand-name { font-size: 14px; font-weight: 600; color: var(--ink); }
 .brand-sub { font-family: var(--mono); font-size: 11px; color: var(--muted); margin-top: 2px; }
 
 .nav-links { display: flex; gap: 28px; align-items: center; font-size: 14px; }
@@ -123,6 +125,7 @@ button { font-family: inherit; }
   transition: color 160ms ease;
   position: relative;
   padding-bottom: 2px;
+  white-space: nowrap;
 }
 .nav-links a:hover { color: var(--ink); }
 .nav-links a.active { color: var(--ink); }
@@ -130,9 +133,22 @@ button { font-family: inherit; }
   content: ""; position: absolute; left: 0; right: 0; bottom: -3px;
   height: 1px; background: var(--accent);
 }
-@media (max-width: 900px) { .nav-links { display: none; } }
-
 .header-cta { display: flex; gap: 10px; align-items: center; }
+
+@media (max-width: 900px) {
+  .header-inner { flex-direction: column; align-items: stretch; padding: 12px 0 0; gap: 0; }
+  .brand, .header-cta { padding: 0 20px 12px; }
+  .header-cta { display: none; }
+  .nav-links {
+    padding: 10px 20px;
+    gap: 20px;
+    overflow-x: auto;
+    border-top: 1px solid var(--rule-soft);
+    background: var(--surface);
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+}
 
 .btn {
   display: inline-flex; align-items: center; gap: 8px;
@@ -183,7 +199,26 @@ button { font-family: inherit; }
   margin-right: 12px;
 }
 
-.hero-name { font-size: 14px; color: var(--muted); margin-bottom: 12px; font-family: var(--mono); }
+.hero-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  margin-bottom: 18px;
+}
+.hero-person {
+  font-size: clamp(24px, 3vw, 34px);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 1;
+  color: var(--ink);
+}
+.hero-role {
+  font-size: 12px;
+  color: var(--muted);
+  font-family: var(--mono);
+  letter-spacing: 0.02em;
+}
 
 .hero-title {
   font-size: clamp(36px, 5vw, 60px);
@@ -276,7 +311,7 @@ button { font-family: inherit; }
   position: sticky; top: 100px;
 }
 .experience-side .label { font-family: var(--mono); font-size: 12px; color: var(--muted); margin-bottom: 6px; }
-.experience-side .total { font-size: 32px; font-weight: 500; line-height: 1.1; letter-spacing: -0.015em; }
+.experience-side .total { font-size: 20px; font-weight: 500; line-height: 1.1; letter-spacing: -0.015em; }
 .experience-side .range { font-family: var(--mono); font-size: 13px; color: var(--muted); margin-top: 6px; }
 @media (max-width: 768px) { .experience-side { position: static; } }
 
@@ -440,7 +475,6 @@ button { font-family: inherit; }
 }
 @media (max-width: 768px) { .toolchain { grid-template-columns: 1fr; gap: 12px; } }
 
-.toolchain-side .label { font-family: var(--mono); font-size: 12px; color: var(--muted); margin-bottom: 6px; }
 .toolchain-side h3 { font-size: 22px; font-weight: 500; letter-spacing: -0.015em; margin: 0 0 8px; }
 .toolchain-side p { font-size: 14px; color: var(--muted); line-height: 1.55; margin: 0; max-width: 24ch; }
 
@@ -530,6 +564,7 @@ button { font-family: inherit; }
 }
 .footer a:hover { color: var(--accent-deep); border-color: var(--accent); }
 .footer .f-cta { margin-top: 4px; }
+.footer .f-note { font-size: 13px; color: var(--muted); margin-top: 4px; }
 
 .footer-mark {
   margin-top: 48px;

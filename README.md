@@ -38,6 +38,21 @@ Tags get an amber treatment automatically when their text matches
 class, so add `class="tag amber"` instead of just `class="tag"` for any
 new tag you want flagged.
 
+## Maintenance notes
+
+### Stylesheet versioning
+The stylesheet link in `index.html` uses a version parameter (e.g., `styles.css?v=20260503`). This is intentional to prevent browsers from serving a stale cached version of the CSS after updates. Always increment this version when making major visual changes.
+
+### Dependencies
+- **Google Fonts:** The site loads "Inter Tight" and "JetBrains Mono" from Google Fonts at runtime.
+- **No Build Step:** This remains a plain HTML/CSS/JS site. Do not add bundlers or frameworks.
+
+### Section Syncing
+If you change section IDs or add new sections:
+1. Update the `id` attribute on the `<section>`.
+2. Update the `href` and `data-jump` attributes in the `<nav>` links.
+3. Update the `ids` array in the `<script>` at the bottom of `index.html` to ensure the scroll-spy (IntersectionObserver) continues to track the active section correctly.
+
 ## How to commit changes
 
 ```bash

@@ -8,13 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=20260503">
 </head>
 <body>
 
 <header class="header">
   <div class="header-inner">
-    <a href="#top" class="brand" data-jump="top" style="text-decoration:none">
+    <a href="#top" class="brand" data-jump="top">
       <div class="brand-mark">DS</div>
       <div class="brand-text">
         <div class="brand-name">Diego Suarez</div>
@@ -105,7 +105,10 @@
       <span>Nuclear · Automotive · Manufacturing</span>
     </div>
 
-    <div class="hero-name">Diego Suarez — Electrical Systems Design Engineer</div>
+    <div class="hero-name">
+      <span class="hero-person">Diego Suarez</span>
+      <span class="hero-role">Electrical Systems Design Engineer</span>
+    </div>
 
     <h1 class="hero-title">
       I design electrical systems for environments where failure is <em>expensive, dangerous, or impossible to access.</em>
@@ -156,7 +159,7 @@
       <aside class="experience-side">
         <div class="eyebrow">Experience</div>
         <div class="label">Continuous</div>
-        <div class="total" style="font-size:20px">9+ years</div>
+        <div class="total">9+ years</div>
         <div class="range">Four roles, three sectors — chronology in full.</div>
       </aside>
 
@@ -395,7 +398,7 @@
           <ul>
             <li>MS Office</li>
             <li>SAP</li>
-            <li style="margin-top:10px;padding-top:10px;border-top:1px solid var(--rule-soft);color:var(--muted)">
+            <li class="tc-languages">
               Languages: English (native) · Portuguese (fluent) · Spanish (conversational)
             </li>
           </ul>
@@ -443,11 +446,11 @@
       <div>
         <h6>Contact</h6>
         <a href="https://linkedin.com/in/1diegosuarez" target="_blank" rel="noopener noreferrer">linkedin.com/in/1diegosuarez</a>
-        <div style="font-size:13px;color:var(--muted);margin-top:4px">Email available on the downloaded CV.</div>
+        <div class="f-note">Email available on the downloaded CV.</div>
       </div>
       <div>
         <h6>Document</h6>
-        <a class="f-cta" href="Diego_Suarez_CV.pdf" download="Diego_Suarez_CV.pdf">↓ Download Diego_Suarez_CV.pdf</a>
+        <a class="f-cta" href="Diego_Suarez_CV.pdf" download="Diego_Suarez_CV.pdf">Download CV <span class="arrow">↓</span></a>
       </div>
     </div>
     <div class="footer-mark">
@@ -463,8 +466,9 @@
   var navLinks = document.querySelectorAll(".nav-links a");
 
   function setActive(id) {
+    var targetId = id === "top" ? "experience" : id;
     navLinks.forEach(function (a) {
-      a.classList.toggle("active", a.getAttribute("href") === "#" + id);
+      a.classList.toggle("active", a.getAttribute("href") === "#" + targetId);
     });
   }
 
@@ -479,6 +483,17 @@
       if (el) obs.observe(el);
     });
   }
+
+  // Set initial active state for the first real nav section in view.
+  var activeId = null;
+  for (var i = ids.length - 1; i >= 1; i--) {
+    var el = document.getElementById(ids[i]);
+    if (el && el.getBoundingClientRect().top < window.innerHeight * 0.5) {
+      activeId = ids[i];
+      break;
+    }
+  }
+  setActive(activeId || ids[1]);
 
   document.querySelectorAll("[data-jump]").forEach(function (link) {
     link.addEventListener("click", function (ev) {
