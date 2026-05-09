@@ -1,31 +1,57 @@
 # Systems Under Tension — CV site
 
-Static one-page CV for Diego Suarez. No build step, no framework, no runtime
-dependencies beyond Google Fonts.
+Static multilingual CV for Diego Suarez. No build step, no framework, no
+runtime dependencies beyond Google Fonts.
 
 ## Files
 
-- `index.html` — the entire page. **All content lives here** — text, roles,
-  bullets, tags, education, footer.
+- `index.html` — English source page and default entry point.
+- `pt-br/index.html` — Brazilian Portuguese page.
+- `es/index.html` — Spanish page.
+- `zh-cn/index.html` — Simplified Chinese page.
 - `styles.css` — visual system (colours, type, layout).
-- `Diego_Suarez_CV.pdf` — the file the three "Download CV" buttons serve.
+- `Diego_Suarez_CV.pdf` — the English CV served by every download button.
 - `.gitignore`, `README.md` — repo housekeeping.
 
 ## How to update content
 
-There is **one path**:
+English is the source of truth:
 
 1. Open `index.html` in any editor.
 2. Edit the text in place.
-3. Save.
+3. Mirror the same structural/content change in `pt-br/index.html`,
+   `es/index.html`, and `zh-cn/index.html`.
+4. Translate only the human-facing text. Preserve section IDs, class names,
+   script IDs, employer names, product names, standards, and acronyms unless
+   there is a widely accepted localized convention.
+5. Check the language switcher, download links, and `hreflang` links on all
+   four pages.
 
-That's it. To preview, double-click `index.html` (it opens in your browser).
+To preview, double-click any `index.html` file. The localized pages live in
+folders, so their shared assets are referenced with `../`.
+
+### Translation checklist
+
+For every localized page:
+
+- Confirm `<html lang>` is correct: `pt-BR`, `es`, or `zh-CN`.
+- Translate the title, meta description, nav, buttons, footer, and accessibility
+  labels.
+- Keep numbers, dates, standards, companies, and chronology aligned with the
+  English page.
+- Keep the page structure identical to the English page.
+- Verify the CV download text says the PDF is English.
+- Search for accidental leftover English UI copy.
 
 ### Updating the downloadable CV
 
-Replace `Diego_Suarez_CV.pdf` with a new file using the **same name**. The
-download buttons reference the filename directly, so they'll pick up the
+Replace `Diego_Suarez_CV.pdf` with a new English file using the **same name**.
+The download buttons reference the filename directly, so they'll pick up the
 new file automatically.
+
+The localized website pages currently download the English PDF and label it as
+English. If localized PDFs are added later, update each locale page to point to
+its matching PDF.
 
 ### Adding a new role
 

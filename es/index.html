@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diego Suarez · Ingeniero Sénior de Diseño Eléctrico</title>
+<meta name="description" content="Diego Suarez — Ingeniero de Diseño de Sistemas Eléctricos. Más de 9 años en fusión nuclear, automoción y maquinaria industrial.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="alternate" hreflang="en" href="../index.html">
+<link rel="alternate" hreflang="pt-BR" href="../pt-br/index.html">
+<link rel="alternate" hreflang="es" href="../es/index.html">
+<link rel="alternate" hreflang="zh-CN" href="../zh-cn/index.html">
+<link rel="alternate" hreflang="x-default" href="../index.html">
+<link rel="stylesheet" href="../styles.css?v=20260503">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="#top" class="brand" data-jump="top">
+      <div class="brand-mark">DS</div>
+      <div class="brand-text">
+        <div class="brand-name">Diego Suarez</div>
+        <div class="brand-sub">Ingeniero de Diseño de Sistemas Eléctricos</div>
+      </div>
+    </a>
+    <nav class="nav-links" aria-label="Secciones">
+      <a href="#experience" data-jump="experience">Experiencia</a>
+      <a href="#expertise" data-jump="expertise">Especialidad</a>
+      <a href="#toolchain" data-jump="toolchain">Normas y herramientas</a>
+      <a href="#education" data-jump="education">Formación</a>
+    </nav>
+    <nav class="language-switcher" aria-label="Idioma">
+      <a href="../index.html" hreflang="en" lang="en">EN</a>
+      <a href="../pt-br/index.html" hreflang="pt-BR" lang="pt-BR">PT-BR</a>
+      <a href="../es/index.html" hreflang="es" lang="es" aria-current="page">ES</a>
+      <a href="../zh-cn/index.html" hreflang="zh-CN" lang="zh-CN">中文</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn" href="../Diego_Suarez_CV.pdf" download="Diego_Suarez_CV.pdf">
+        Descargar CV (inglés) <span class="arrow">→</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-bg">
+    <svg viewBox="0 0 600 540" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+      <defs>
+        <pattern id="sg" width="40" height="40" patternUnits="userSpaceOnUse">
+          <path d="M 40 0 L 0 0 0 40" fill="none" stroke="var(--rule)" stroke-width="0.5"></path>
+        </pattern>
+      </defs>
+      <rect width="600" height="540" fill="url(#sg)" opacity="0.7"></rect>
+
+      <g fill="none" stroke="var(--rule)" stroke-width="1">
+        <line x1="40" y1="120" x2="560" y2="120"></line>
+        <line x1="40" y1="420" x2="560" y2="420"></line>
+
+        <!-- IC -->
+        <rect x="220" y="220" width="160" height="100"></rect>
+        <line x1="300" y1="120" x2="300" y2="220"></line>
+        <line x1="300" y1="320" x2="300" y2="420"></line>
+        <line x1="220" y1="250" x2="200" y2="250"></line>
+        <line x1="380" y1="250" x2="400" y2="250"></line>
+        <line x1="220" y1="270" x2="200" y2="270"></line>
+        <line x1="380" y1="270" x2="400" y2="270"></line>
+        <line x1="220" y1="290" x2="200" y2="290"></line>
+        <line x1="380" y1="290" x2="400" y2="290"></line>
+
+        <!-- Resistor -->
+        <line x1="120" y1="120" x2="120" y2="190"></line>
+        <rect x="108" y="190" width="24" height="50"></rect>
+        <line x1="120" y1="240" x2="120" y2="420"></line>
+
+        <!-- Capacitor -->
+        <line x1="480" y1="120" x2="480" y2="220"></line>
+        <line x1="464" y1="220" x2="496" y2="220"></line>
+        <line x1="464" y1="232" x2="496" y2="232"></line>
+        <line x1="480" y1="232" x2="480" y2="420"></line>
+
+        <!-- Junction dots -->
+        <circle cx="120" cy="120" r="2.5" fill="var(--rule)"></circle>
+        <circle cx="120" cy="420" r="2.5" fill="var(--rule)"></circle>
+        <circle cx="300" cy="120" r="2.5" fill="var(--rule)"></circle>
+        <circle cx="300" cy="420" r="2.5" fill="var(--rule)"></circle>
+        <circle cx="480" cy="120" r="2.5" fill="var(--rule)"></circle>
+        <circle cx="480" cy="420" r="2.5" fill="var(--rule)"></circle>
+      </g>
+
+      <!-- Live trace -->
+      <g fill="none" stroke="var(--accent)" stroke-width="1.5">
+        <path d="M 40 120 L 120 120 L 120 190" stroke-dasharray="280" stroke-dashoffset="280">
+          <animate attributeName="stroke-dashoffset" from="280" to="0" dur="1.6s" fill="freeze" begin="0.4s"></animate>
+        </path>
+        <path d="M 200 270 L 180 270 L 180 350 L 300 350" stroke-dasharray="240" stroke-dashoffset="240">
+          <animate attributeName="stroke-dashoffset" from="240" to="0" dur="1.6s" fill="freeze" begin="1s"></animate>
+        </path>
+      </g>
+
+      <g font-family="var(--mono)" font-size="10" fill="var(--muted-2)">
+        <text x="40" y="112">+24V</text>
+        <text x="40" y="436">0V</text>
+        <text x="232" y="240">U1</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="shell hero-inner">
+    <div class="hero-name">
+      <span class="hero-person">Diego Suarez</span>
+      <span class="hero-role">Ingeniero de Diseño de Sistemas Eléctricos</span>
+    </div>
+
+    <div class="hero-meta">
+      <span>Banbury, Inglaterra</span>
+      <span>2016 → actualidad</span>
+      <span>Nuclear · Automoción · Fabricación</span>
+    </div>
+
+    <h1 class="hero-title">
+      Diseño sistemas eléctricos para entornos donde un fallo es <em>costoso, peligroso o imposible de acceder.</em>
+    </h1>
+
+    <p class="hero-summary">Ingeniero Sénior de Sistemas Eléctricos con más de 9 años en fusión nuclear, automoción y maquinaria industrial. Especializado en diseño eléctrico, documentación técnica, conformidad, puesta en marcha, entrega multifuncional, captura de requisitos, verificación, DFM y soporte a producción en entornos críticos para la seguridad.</p>
+
+    <div class="hero-actions">
+      <a class="btn" href="../Diego_Suarez_CV.pdf" download="Diego_Suarez_CV.pdf">
+        Descargar CV (inglés) <span class="arrow">→</span>
+      </a>
+      <div class="contact">
+        <a href="https://linkedin.com/in/1diegosuarez" target="_blank" rel="noopener noreferrer">linkedin.com/in/1diegosuarez</a>
+      </div>
+    </div>
+
+    <div class="highlights">
+      <div class="highlights-label">Por qué preseleccionarme</div>
+      <div class="highlights-grid">
+        <div class="highlight">
+          <div class="h-key">ITER / JET</div>
+          <div class="h-val">UKAEA en el departamento RACE — manipulación remota de ITER y predesmantelamiento de JET.</div>
+        </div>
+        <div class="highlight">
+          <div class="h-key">Endurecimiento a radiación</div>
+          <div class="h-val">Arquitecturas endurecidas a radiación para inspección remota, conformes con normas EN y seguridad nuclear.</div>
+        </div>
+        <div class="highlight">
+          <div class="h-key">100% a tiempo</div>
+          <div class="h-val">Decenas de bancos de prueba de automoción entregados, desde el concepto hasta la puesta en marcha en fábrica.</div>
+        </div>
+        <div class="highlight">
+          <div class="h-key">Estandarización en 2 sedes</div>
+          <div class="h-val">Diseño eléctrico estandarizado entre Fortress / Sparc; conformidad ISO, CE, UKCA e IEC.</div>
+        </div>
+        <div class="highlight">
+          <div class="h-key">Lanzamiento JLR</div>
+          <div class="h-val">Liderazgo del lanzamiento del Discovery Commercial 2018; WERS / AIM2 durante la rampa de producción.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="section">
+  <div class="shell">
+    <div class="experience-grid">
+      <aside class="experience-side">
+        <div class="eyebrow">Experiencia</div>
+        <div class="label">Continua</div>
+        <div class="total">Más de 9 años</div>
+        <div class="range">Cuatro cargos, tres sectores — cronología completa.</div>
+      </aside>
+
+      <div class="timeline">
+
+        <article class="role">
+          <div class="role-head">
+            <div class="role-employer">UK Atomic Energy Authority</div>
+            <div class="role-dates">sept. 2023 — actualidad</div>
+          </div>
+          <div class="role-title">Ingeniero Sénior de Sistemas Eléctricos</div>
+          <div class="role-meta">
+            <span>Abingdon, Reino Unido</span>
+            <span class="sep">·</span>
+            <span>Fusión · Manipulación remota · Desmantelamiento</span>
+          </div>
+          <p class="role-summary">Diseño y documento sistemas eléctricos dentro de RACE para robótica de ITER; arquitecturas endurecidas a radiación con conformidad EN y de seguridad nuclear; orientación de diseño rad-hard al equipo ampliado; aislamientos de JET y documentación de predesmantelamiento en entregas multidisciplinares.</p>
+          <ul class="role-bullets">
+            <li>Diseñar y documentar sistemas eléctricos de RACE que apoyan la robótica de manipulación remota de ITER — restricciones de un programa internacional de fusión.</li>
+            <li>Desarrollé arquitecturas endurecidas a radiación para sistemas de inspección remota, conformes con normas EN y seguridad nuclear.</li>
+            <li>Proporciono orientación de diseño eléctrico y electrónico rad-hard al equipo ampliado.</li>
+            <li>Gestiono aislamientos eléctricos de desimplantación de JET y documentación de planificación de predesmantelamiento.</li>
+            <li>Impulso entregas multidisciplinares — requisitos, verificación y gestión de interfaces entre equipos.</li>
+          </ul>
+          <div class="role-tags">
+            <span class="tag amber">Seguridad nuclear</span>
+            <span class="tag amber">Seguridad funcional</span>
+            <span class="tag amber">Endurecimiento a radiación</span>
+            <span class="tag">Manipulación remota</span>
+            <span class="tag">Normas EN</span>
+            <span class="tag">Requisitos</span>
+            <span class="tag">Verificación</span>
+            <span class="tag">Gestión de interfaces</span>
+          </div>
+        </article>
+
+        <article class="role">
+          <div class="role-head">
+            <div class="role-employer">Fortress Technology Inc. &amp; Sparc Systems</div>
+            <div class="role-dates">jun. 2021 — ago. 2023</div>
+          </div>
+          <div class="role-title">Ingeniero de Diseño Eléctrico</div>
+          <div class="role-meta">
+            <span>Banbury, Reino Unido</span>
+            <span class="sep">·</span>
+            <span>Maquinaria alimentaria · Crítico para la seguridad</span>
+          </div>
+          <p class="role-summary">Estandarización del diseño eléctrico en dos sedes; componentes validados conforme a ISO, CE, UKCA, IEC y BS EN 60204-1; liderazgo en diseño BT — esquemas, layouts de paneles, diagramas de cableado, BOMs y revisiones de diseño — apoyando fabricación, puesta en marcha, ventas, aprobaciones y proveedores.</p>
+          <ul class="role-bullets">
+            <li>Estandaricé el diseño de ingeniería eléctrica en dos sedes de producción — calidad y colaboración multifuncional.</li>
+            <li>Validé componentes críticos para la seguridad conforme a ISO, CE, UKCA, IEC y BS EN 60204-1.</li>
+            <li>Lideré diseño BT: esquemas, layouts de paneles, diagramas de cableado, BOMs y revisiones de diseño.</li>
+            <li>Apoyé fabricación, puesta en marcha, ventas, aprobaciones y proveedores como responsable eléctrico.</li>
+          </ul>
+          <div class="role-tags">
+            <span class="tag">CE / UKCA</span>
+            <span class="tag">EMC</span>
+            <span class="tag">BS EN 60204-1</span>
+            <span class="tag">ISO / IEC</span>
+            <span class="tag">Diseño de paneles</span>
+            <span class="tag">BOMs</span>
+            <span class="tag">DFM</span>
+          </div>
+        </article>
+
+        <article class="role">
+          <div class="role-head">
+            <div class="role-employer">Sorion Electronics</div>
+            <div class="role-dates">ene. 2019 — may. 2021</div>
+          </div>
+          <div class="role-title">Ingeniero de Diseño Eléctrico</div>
+          <div class="role-meta">
+            <span>Birmingham, Reino Unido</span>
+            <span class="sep">·</span>
+            <span>Bancos de prueba · Del CAD a la puesta en marcha</span>
+          </div>
+          <p class="role-summary">Bancos de prueba de automoción entregados 100% a tiempo; responsable de requisitos, esquemas CAD, paneles, BOMs, revisiones de diseño y soporte de puesta en marcha; impulsé mejoras de DFM con verificación y comunicación con stakeholders durante todo el proceso.</p>
+          <ul class="role-bullets">
+            <li>Entregué bancos de prueba de automoción 100% a tiempo, desde el concepto hasta la puesta en marcha en fábrica.</li>
+            <li>Fui responsable de requisitos, esquemas CAD, paneles, BOMs y revisiones de diseño.</li>
+            <li>Impulsé mejoras de DFM con ingenieros mecánicos; aumenté la eficiencia en entregables de diseño.</li>
+            <li>Proporcioné soporte de puesta en marcha, verificación y comunicación con stakeholders de extremo a extremo.</li>
+          </ul>
+          <div class="role-tags">
+            <span class="tag">Automoción</span>
+            <span class="tag">Puesta en marcha</span>
+            <span class="tag">EPLAN</span>
+            <span class="tag">DFM</span>
+            <span class="tag">Esquemas</span>
+            <span class="tag">Verificación</span>
+            <span class="tag">Requisitos</span>
+          </div>
+        </article>
+
+        <article class="role">
+          <div class="role-head">
+            <div class="role-employer">Jaguar Land Rover</div>
+            <div class="role-dates">oct. 2016 — ene. 2019</div>
+          </div>
+          <div class="role-title">Analista Técnico / Ingeniero</div>
+          <div class="role-meta">
+            <span>Reino Unido</span>
+            <span class="sep">·</span>
+            <span>SVO · Lanzamiento</span>
+          </div>
+          <p class="role-summary">Integración eléctrica para el lanzamiento del Discovery Commercial 2018 dentro de Special Vehicle Operations; cambios WERS, presentaciones AIM2, builds de ingeniería, documentación, revisiones de programa y resolución de incidencias en build durante la rampa de producción.</p>
+          <ul class="role-bullets">
+            <li>Lideré la planificación y la integración eléctrica para el lanzamiento del Discovery Commercial 2018 dentro de SVO.</li>
+            <li>Gestioné cambios eléctricos WERS (Warranty Engineering Release System) durante la rampa.</li>
+            <li>Fui responsable de las presentaciones técnicas AIM2 (Assembly Instruction Management) para builds de producción.</li>
+            <li>Emití pedidos de piezas para builds de ingeniería en cada etapa de desarrollo; resolví problemas de ingeniería con rapidez.</li>
+            <li>Representé a SVO Electrical en revisiones de programa con alta dirección; resolví problemas eléctricos durante builds.</li>
+          </ul>
+          <div class="role-tags">
+            <span class="tag">WERS</span>
+            <span class="tag">AIM2</span>
+            <span class="tag">Soporte de lanzamiento</span>
+            <span class="tag">Rampa de producción</span>
+            <span class="tag">Cambio de ingeniería</span>
+            <span class="tag">Automoción</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="expertise" class="section">
+  <div class="shell">
+    <div class="eyebrow">Especialidad</div>
+    <h2 class="section-title">Tres sectores. Una mentalidad de sistemas.</h2>
+    <p class="section-lede">Dónde he entregado, qué lo demuestra y las normas bajo las que opera cada dominio.</p>
+
+    <div class="expertise-grid">
+
+      <div class="expertise-card">
+        <div class="e-num">01 · Dominio</div>
+        <div class="e-where">UKAEA</div>
+        <div class="e-label">Nuclear</div>
+        <div class="e-sub">Fusión · manipulación remota · desmantelamiento</div>
+        <p class="e-proof">Arquitecturas endurecidas a radiación, manipulación remota de ITER, documentación de desmantelamiento de JET.</p>
+        <div class="e-tags">
+          <span class="tag amber">Seguridad nuclear</span>
+          <span class="tag">Normas EN</span>
+          <span class="tag amber">Seguridad funcional</span>
+          <span class="tag">Endurecimiento a radiación</span>
+        </div>
+      </div>
+
+      <div class="expertise-card">
+        <div class="e-num">02 · Dominio</div>
+        <div class="e-where">JLR · Sorion</div>
+        <div class="e-label">Automoción</div>
+        <div class="e-sub">Lanzamiento · bancos de prueba · puesta en marcha</div>
+        <p class="e-proof">Lanzamiento del Discovery Commercial 2018; entrega de bancos de prueba; puesta en marcha; control de cambios WERS / AIM2 durante la rampa.</p>
+        <div class="e-tags">
+          <span class="tag">Automoción</span>
+          <span class="tag">EMC</span>
+          <span class="tag">WERS</span>
+          <span class="tag">AIM2</span>
+          <span class="tag">EPLAN</span>
+        </div>
+      </div>
+
+      <div class="expertise-card">
+        <div class="e-num">03 · Dominio</div>
+        <div class="e-where">Fortress / Sparc</div>
+        <div class="e-label">Fabricación</div>
+        <div class="e-sub">Maquinaria alimentaria · crítica para la seguridad</div>
+        <p class="e-proof">Estandarización en dos sedes, validación de componentes críticos para la seguridad, diseño BT, esquemas y paneles.</p>
+        <div class="e-tags">
+          <span class="tag">BS EN 60204-1</span>
+          <span class="tag">CE / UKCA</span>
+          <span class="tag">ISO / IEC</span>
+          <span class="tag amber">Seguridad funcional</span>
+          <span class="tag">Diseño de paneles</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="toolchain" class="section">
+  <div class="shell">
+    <div class="toolchain">
+      <aside class="toolchain-side">
+        <div class="eyebrow">Normas y herramientas</div>
+        <h3>La cadena de herramientas de apoyo</h3>
+        <p>Normas con las que trabajo, CAD en el que diseño y capacidades que aporto entre funciones.</p>
+      </aside>
+
+      <div class="toolchain-grid">
+        <div class="tc-block">
+          <h4>Seguridad y conformidad <span class="count">6</span></h4>
+          <ul>
+            <li>EN / IEC 61508</li>
+            <li>BS EN 60204-1</li>
+            <li>CE / UKCA / EMC</li>
+            <li>ISO / IEC</li>
+            <li>WERS</li>
+            <li>AIM2</li>
+          </ul>
+        </div>
+        <div class="tc-block">
+          <h4>CAD y software <span class="count">5</span></h4>
+          <ul>
+            <li>EPLAN</li>
+            <li>AutoCAD</li>
+            <li>CAD eléctrico</li>
+            <li>NI Multisim</li>
+            <li>SolidWorks (básico)</li>
+          </ul>
+        </div>
+        <div class="tc-block">
+          <h4>Capacidades de ingeniería <span class="count">13</span></h4>
+          <ul>
+            <li>Diseño eléctrico / BT / paneles de control</li>
+            <li>Esquemas y diagramas de cableado</li>
+            <li>Captura de requisitos</li>
+            <li>Verificación y validación (V&amp;V)</li>
+            <li>DFM</li>
+            <li>DFMEA / evaluación de riesgos</li>
+            <li>Documentación técnica</li>
+            <li>Revisiones de diseño</li>
+            <li>Puesta en marcha</li>
+            <li>Soporte de instalación</li>
+            <li>Control de cambios</li>
+            <li>Gestión de stakeholders</li>
+            <li>Endurecimiento a radiación design</li>
+          </ul>
+        </div>
+        <div class="tc-block">
+          <h4>Negocio e idiomas</h4>
+          <ul>
+            <li>MS Office</li>
+            <li>SAP</li>
+            <li class="tc-languages">
+              Idiomas: inglés (nativo) · portugués (fluido) · español (conversacional)
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="section">
+  <div class="shell">
+    <div class="eyebrow">Formación</div>
+    <h2 class="section-title">Formación en ingeniería en dos universidades.</h2>
+    <p class="section-lede">Ingeniería eléctrica y energética a nivel universitario; bachillerato internacional en Shenzhen.</p>
+
+    <div class="education-list">
+      <div class="edu">
+        <div class="e-span">2013 — 2016</div>
+        <div class="e-degree">BEng (Hons.) en Ingeniería Eléctrica y Electrónica</div>
+        <div class="e-inst">University of Brighton</div>
+      </div>
+      <div class="edu">
+        <div class="e-span">2010 — 2013</div>
+        <div class="e-degree">BEng en Ingeniería Energética (asignaturas completadas)</div>
+        <div class="e-inst">Penn State</div>
+      </div>
+      <div class="edu">
+        <div class="e-span">2006 — 2010</div>
+        <div class="e-degree">Bachillerato Internacional / Diploma de Secundaria</div>
+        <div class="e-inst">Shenzhen International School</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="shell">
+    <div class="footer-grid">
+      <div>
+        <h6>Identidad</h6>
+        <div class="f-name">Diego Suarez</div>
+        <div class="f-role">Ingeniero de Diseño de Sistemas Eléctricos · Banbury, Inglaterra</div>
+        <p class="f-positioning">Diseño sistemas eléctricos para entornos donde un fallo es costoso, peligroso o imposible de acceder.</p>
+      </div>
+      <div>
+        <h6>Contacto</h6>
+        <a href="https://linkedin.com/in/1diegosuarez" target="_blank" rel="noopener noreferrer">linkedin.com/in/1diegosuarez</a>
+        <div class="f-note">Correo disponible en el CV descargado.</div>
+      </div>
+      <div>
+        <h6>Documento</h6>
+        <a class="f-cta" href="../Diego_Suarez_CV.pdf" download="Diego_Suarez_CV.pdf">Descargar CV (inglés) <span class="arrow">↓</span></a>
+      </div>
+    </div>
+    <div class="footer-mark">
+      <span>Systems Under Tension · Diego Suarez · 2026</span>
+      <span>Una página</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var ids = ["top", "experience", "expertise", "toolchain", "education"];
+  var navLinks = document.querySelectorAll(".nav-links a");
+
+  function setActive(id) {
+    var targetId = id === "top" ? "experience" : id;
+    navLinks.forEach(function (a) {
+      a.classList.toggle("active", a.getAttribute("href") === "#" + targetId);
+    });
+  }
+
+  if ("IntersectionObserver" in window) {
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) setActive(e.target.id);
+      });
+    }, { rootMargin: "-30% 0px -55% 0px", threshold: 0 });
+    ids.forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) obs.observe(el);
+    });
+  }
+
+  // Set initial active state for the first real nav section in view.
+  var activeId = null;
+  for (var i = ids.length - 1; i >= 1; i--) {
+    var el = document.getElementById(ids[i]);
+    if (el && el.getBoundingClientRect().top < window.innerHeight * 0.5) {
+      activeId = ids[i];
+      break;
+    }
+  }
+  setActive(activeId || ids[1]);
+
+  document.querySelectorAll("[data-jump]").forEach(function (link) {
+    link.addEventListener("click", function (ev) {
+      var id = link.getAttribute("data-jump");
+      var el = document.getElementById(id);
+      if (!el) return;
+      ev.preventDefault();
+      var top = el.getBoundingClientRect().top + window.scrollY - 80;
+      window.scrollTo({ top: top, behavior: "smooth" });
+    });
+  });
+})();
+</script>
+
+</body>
+</html>

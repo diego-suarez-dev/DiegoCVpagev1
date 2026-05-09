@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diego Suarez · 高级电气设计工程师</title>
+<meta name="description" content="Diego Suarez — 电气系统设计工程师。在核聚变、汽车和工业机械领域拥有9年以上经验。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="alternate" hreflang="en" href="../index.html">
+<link rel="alternate" hreflang="pt-BR" href="../pt-br/index.html">
+<link rel="alternate" hreflang="es" href="../es/index.html">
+<link rel="alternate" hreflang="zh-CN" href="../zh-cn/index.html">
+<link rel="alternate" hreflang="x-default" href="../index.html">
+<link rel="stylesheet" href="../styles.css?v=20260503">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="#top" class="brand" data-jump="top">
+      <div class="brand-mark">DS</div>
+      <div class="brand-text">
+        <div class="brand-name">Diego Suarez</div>
+        <div class="brand-sub">电气系统设计工程师</div>
+      </div>
+    </a>
+    <nav class="nav-links" aria-label="页面部分">
+      <a href="#experience" data-jump="experience">经历</a>
+      <a href="#expertise" data-jump="expertise">专长</a>
+      <a href="#toolchain" data-jump="toolchain">标准与工具</a>
+      <a href="#education" data-jump="education">教育</a>
+    </nav>
+    <nav class="language-switcher" aria-label="语言">
+      <a href="../index.html" hreflang="en" lang="en">EN</a>
+      <a href="../pt-br/index.html" hreflang="pt-BR" lang="pt-BR">PT-BR</a>
+      <a href="../es/index.html" hreflang="es" lang="es">ES</a>
+      <a href="../zh-cn/index.html" hreflang="zh-CN" lang="zh-CN" aria-current="page">中文</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn" href="../Diego_Suarez_CV.pdf" download="Diego_Suarez_CV.pdf">
+        下载英文简历 <span class="arrow">→</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-bg">
+    <svg viewBox="0 0 600 540" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+      <defs>
+        <pattern id="sg" width="40" height="40" patternUnits="userSpaceOnUse">
+          <path d="M 40 0 L 0 0 0 40" fill="none" stroke="var(--rule)" stroke-width="0.5"></path>
+        </pattern>
+      </defs>
+      <rect width="600" height="540" fill="url(#sg)" opacity="0.7"></rect>
+
+      <g fill="none" stroke="var(--rule)" stroke-width="1">
+        <line x1="40" y1="120" x2="560" y2="120"></line>
+        <line x1="40" y1="420" x2="560" y2="420"></line>
+
+        <!-- IC -->
+        <rect x="220" y="220" width="160" height="100"></rect>
+        <line x1="300" y1="120" x2="300" y2="220"></line>
+        <line x1="300" y1="320" x2="300" y2="420"></line>
+        <line x1="220" y1="250" x2="200" y2="250"></line>
+        <line x1="380" y1="250" x2="400" y2="250"></line>
+        <line x1="220" y1="270" x2="200" y2="270"></line>
+        <line x1="380" y1="270" x2="400" y2="270"></line>
+        <line x1="220" y1="290" x2="200" y2="290"></line>
+        <line x1="380" y1="290" x2="400" y2="290"></line>
+
+        <!-- Resistor -->
+        <line x1="120" y1="120" x2="120" y2="190"></line>
+        <rect x="108" y="190" width="24" height="50"></rect>
+        <line x1="120" y1="240" x2="120" y2="420"></line>
+
+        <!-- Capacitor -->
+        <line x1="480" y1="120" x2="480" y2="220"></line>
+        <line x1="464" y1="220" x2="496" y2="220"></line>
+        <line x1="464" y1="232" x2="496" y2="232"></line>
+        <line x1="480" y1="232" x2="480" y2="420"></line>
+
+        <!-- Junction dots -->
+        <circle cx="120" cy="120" r="2.5" fill="var(--rule)"></circle>
+        <circle cx="120" cy="420" r="2.5" fill="var(--rule)"></circle>
+        <circle cx="300" cy="120" r="2.5" fill="var(--rule)"></circle>
+        <circle cx="300" cy="420" r="2.5" fill="var(--rule)"></circle>
+        <circle cx="480" cy="120" r="2.5" fill="var(--rule)"></circle>
+        <circle cx="480" cy="420" r="2.5" fill="var(--rule)"></circle>
+      </g>
+
+      <!-- Live trace -->
+      <g fill="none" stroke="var(--accent)" stroke-width="1.5">
+        <path d="M 40 120 L 120 120 L 120 190" stroke-dasharray="280" stroke-dashoffset="280">
+          <animate attributeName="stroke-dashoffset" from="280" to="0" dur="1.6s" fill="freeze" begin="0.4s"></animate>
+        </path>
+        <path d="M 200 270 L 180 270 L 180 350 L 300 350" stroke-dasharray="240" stroke-dashoffset="240">
+          <animate attributeName="stroke-dashoffset" from="240" to="0" dur="1.6s" fill="freeze" begin="1s"></animate>
+        </path>
+      </g>
+
+      <g font-family="var(--mono)" font-size="10" fill="var(--muted-2)">
+        <text x="40" y="112">+24V</text>
+        <text x="40" y="436">0V</text>
+        <text x="232" y="240">U1</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="shell hero-inner">
+    <div class="hero-name">
+      <span class="hero-person">Diego Suarez</span>
+      <span class="hero-role">电气系统设计工程师</span>
+    </div>
+
+    <div class="hero-meta">
+      <span>英格兰班伯里</span>
+      <span>2016年至今</span>
+      <span>核能 · 汽车 · 制造</span>
+    </div>
+
+    <h1 class="hero-title">
+      我为那些一旦失效就会<em>代价高昂、危险，或难以接近</em>的环境设计电气系统。
+    </h1>
+
+    <p class="hero-summary">高级电气系统工程师，在核聚变、汽车和工业机械领域拥有9年以上经验。专长包括电气设计、技术文档、合规、调试、跨职能交付、需求捕获、验证、DFM，以及安全关键环境中的生产支持。</p>
+
+    <div class="hero-actions">
+      <a class="btn" href="../Diego_Suarez_CV.pdf" download="Diego_Suarez_CV.pdf">
+        下载英文简历 <span class="arrow">→</span>
+      </a>
+      <div class="contact">
+        <a href="https://linkedin.com/in/1diegosuarez" target="_blank" rel="noopener noreferrer">linkedin.com/in/1diegosuarez</a>
+      </div>
+    </div>
+
+    <div class="highlights">
+      <div class="highlights-label">为什么将我列入候选名单</div>
+      <div class="highlights-grid">
+        <div class="highlight">
+          <div class="h-key">ITER / JET</div>
+          <div class="h-val">在 UKAEA RACE 部门工作 — ITER 远程操作和 JET 预退役。</div>
+        </div>
+        <div class="highlight">
+          <div class="h-key">抗辐射</div>
+          <div class="h-val">用于远程检测的抗辐射架构，符合 EN 标准和核安全要求。</div>
+        </div>
+        <div class="highlight">
+          <div class="h-key">100%按时</div>
+          <div class="h-val">交付数十套汽车测试台架，从概念到工厂调试。</div>
+        </div>
+        <div class="highlight">
+          <div class="h-key">两地标准化</div>
+          <div class="h-val">在 Fortress / Sparc 两地实现电气设计标准化；符合 ISO、CE、UKCA、IEC 要求。</div>
+        </div>
+        <div class="highlight">
+          <div class="h-key">JLR 上市项目</div>
+          <div class="h-val">负责 2018 Discovery Commercial 上市；在产能爬坡阶段管理 WERS / AIM2。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="section">
+  <div class="shell">
+    <div class="experience-grid">
+      <aside class="experience-side">
+        <div class="eyebrow">经历</div>
+        <div class="label">连续</div>
+        <div class="total">9年以上</div>
+        <div class="range">四个职位，三个行业 — 完整职业时间线。</div>
+      </aside>
+
+      <div class="timeline">
+
+        <article class="role">
+          <div class="role-head">
+            <div class="role-employer">UK Atomic Energy Authority</div>
+            <div class="role-dates">2023年9月 — 至今</div>
+          </div>
+          <div class="role-title">高级电气系统工程师</div>
+          <div class="role-meta">
+            <span>英国阿宾登</span>
+            <span class="sep">·</span>
+            <span>聚变 · 远程操作 · 退役</span>
+          </div>
+          <p class="role-summary">在 RACE 为 ITER 机器人设计并记录电气系统；开发符合 EN 和核安全要求的抗辐射架构；为更广泛团队提供抗辐射设计指导；在多学科交付中负责 JET 隔离和预退役文档。</p>
+          <ul class="role-bullets">
+            <li>设计并记录支持 ITER 远程操作机器人的 RACE 电气系统 — 满足国际聚变项目约束。</li>
+            <li>为远程检测系统开发抗辐射架构，符合 EN 标准和核安全要求。</li>
+            <li>为更广泛团队提供抗辐射电气和电子设计指导。</li>
+            <li>管理 JET 拆除电气隔离和预退役规划文档。</li>
+            <li>推动多学科交付 — 跨团队管理需求、验证和接口。</li>
+          </ul>
+          <div class="role-tags">
+            <span class="tag amber">核安全</span>
+            <span class="tag amber">功能安全</span>
+            <span class="tag amber">抗辐射加固</span>
+            <span class="tag">远程操作</span>
+            <span class="tag">EN 标准</span>
+            <span class="tag">需求</span>
+            <span class="tag">验证</span>
+            <span class="tag">接口管理</span>
+          </div>
+        </article>
+
+        <article class="role">
+          <div class="role-head">
+            <div class="role-employer">Fortress Technology Inc. &amp; Sparc Systems</div>
+            <div class="role-dates">2021年6月 — 2023年8月</div>
+          </div>
+          <div class="role-title">电气设计工程师</div>
+          <div class="role-meta">
+            <span>英国班伯里</span>
+            <span class="sep">·</span>
+            <span>食品级机械 · 安全关键</span>
+          </div>
+          <p class="role-summary">两地电气设计标准化；按 ISO、CE、UKCA、IEC 和 BS EN 60204-1 验证部件；主导低压设计 — 原理图、控制柜布局、接线图、BOM 和设计评审 — 支持制造、调试、销售、审批和供应商。</p>
+          <ul class="role-bullets">
+            <li>在两个生产地点标准化电气工程设计 — 提升质量并促进跨职能协作。</li>
+            <li>按 ISO、CE、UKCA、IEC 和 BS EN 60204-1 验证安全关键部件。</li>
+            <li>主导低压设计：原理图、控制柜布局、接线图、BOM 和设计评审。</li>
+            <li>作为电气负责人支持制造、调试、销售、审批和供应商。</li>
+          </ul>
+          <div class="role-tags">
+            <span class="tag">CE / UKCA</span>
+            <span class="tag">EMC</span>
+            <span class="tag">BS EN 60204-1</span>
+            <span class="tag">ISO / IEC</span>
+            <span class="tag">控制柜设计</span>
+            <span class="tag">BOMs</span>
+            <span class="tag">DFM</span>
+          </div>
+        </article>
+
+        <article class="role">
+          <div class="role-head">
+            <div class="role-employer">Sorion Electronics</div>
+            <div class="role-dates">2019年1月 — 2021年5月</div>
+          </div>
+          <div class="role-title">电气设计工程师</div>
+          <div class="role-meta">
+            <span>英国伯明翰</span>
+            <span class="sep">·</span>
+            <span>测试台架 · 从 CAD 到调试</span>
+          </div>
+          <p class="role-summary">汽车测试台架100%按时交付；负责需求、CAD 原理图、控制柜、BOM、设计评审和调试支持；通过验证和利益相关方沟通推动 DFM 改进。</p>
+          <ul class="role-bullets">
+            <li>从概念到工厂调试，100%按时交付汽车测试台架。</li>
+            <li>负责需求、CAD 原理图、控制柜、BOM 和设计评审。</li>
+            <li>与机械工程师推动 DFM 改进；提高设计交付效率。</li>
+            <li>提供端到端调试支持、验证和利益相关方沟通。</li>
+          </ul>
+          <div class="role-tags">
+            <span class="tag">汽车</span>
+            <span class="tag">调试</span>
+            <span class="tag">EPLAN</span>
+            <span class="tag">DFM</span>
+            <span class="tag">原理图</span>
+            <span class="tag">验证</span>
+            <span class="tag">需求</span>
+          </div>
+        </article>
+
+        <article class="role">
+          <div class="role-head">
+            <div class="role-employer">Jaguar Land Rover</div>
+            <div class="role-dates">2016年10月 — 2019年1月</div>
+          </div>
+          <div class="role-title">技术分析师 / 工程师</div>
+          <div class="role-meta">
+            <span>英国</span>
+            <span class="sep">·</span>
+            <span>SVO · 上市</span>
+          </div>
+          <p class="role-summary">在 Special Vehicle Operations 负责 2018 Discovery Commercial 上市的电气集成；覆盖 WERS 变更、AIM2 技术资料、工程样车、文档、项目评审，以及产能爬坡期间的现场问题解决。</p>
+          <ul class="role-bullets">
+            <li>在 SVO 内主导 2018 Discovery Commercial 上市的规划和电气集成。</li>
+            <li>在产能爬坡期间管理 WERS (Warranty Engineering Release System) 电气变更。</li>
+            <li>负责生产构建用 AIM2 (Assembly Instruction Management) 技术资料。</li>
+            <li>在每个开发阶段为工程样车提出零件订单；快速解决工程问题。</li>
+            <li>在高级管理层项目评审中代表 SVO Electrical；解决构建过程中的电气问题。</li>
+          </ul>
+          <div class="role-tags">
+            <span class="tag">WERS</span>
+            <span class="tag">AIM2</span>
+            <span class="tag">上市支持</span>
+            <span class="tag">产能爬坡</span>
+            <span class="tag">工程变更</span>
+            <span class="tag">汽车</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="expertise" class="section">
+  <div class="shell">
+    <div class="eyebrow">专长</div>
+    <h2 class="section-title">三个行业。一种系统思维。</h2>
+    <p class="section-lede">我的交付领域、证明成果，以及各领域遵循的标准。</p>
+
+    <div class="expertise-grid">
+
+      <div class="expertise-card">
+        <div class="e-num">01 · 领域</div>
+        <div class="e-where">UKAEA</div>
+        <div class="e-label">核能</div>
+        <div class="e-sub">聚变 · 远程操作 · 退役</div>
+        <p class="e-proof">抗辐射架构、ITER 远程操作、JET 退役文档。</p>
+        <div class="e-tags">
+          <span class="tag amber">核安全</span>
+          <span class="tag">EN 标准</span>
+          <span class="tag amber">功能安全</span>
+          <span class="tag">抗辐射加固</span>
+        </div>
+      </div>
+
+      <div class="expertise-card">
+        <div class="e-num">02 · 领域</div>
+        <div class="e-where">JLR · Sorion</div>
+        <div class="e-label">汽车</div>
+        <div class="e-sub">上市 · 测试台架 · 调试</div>
+        <p class="e-proof">2018 Discovery Commercial 上市；测试台架交付；调试；产能爬坡期间的 WERS / AIM2 变更控制。</p>
+        <div class="e-tags">
+          <span class="tag">汽车</span>
+          <span class="tag">EMC</span>
+          <span class="tag">WERS</span>
+          <span class="tag">AIM2</span>
+          <span class="tag">EPLAN</span>
+        </div>
+      </div>
+
+      <div class="expertise-card">
+        <div class="e-num">03 · 领域</div>
+        <div class="e-where">Fortress / Sparc</div>
+        <div class="e-label">制造</div>
+        <div class="e-sub">食品级机械 · 安全关键</div>
+        <p class="e-proof">两地标准化、安全关键部件验证、低压设计、原理图和控制柜。</p>
+        <div class="e-tags">
+          <span class="tag">BS EN 60204-1</span>
+          <span class="tag">CE / UKCA</span>
+          <span class="tag">ISO / IEC</span>
+          <span class="tag amber">功能安全</span>
+          <span class="tag">控制柜设计</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="toolchain" class="section">
+  <div class="shell">
+    <div class="toolchain">
+      <aside class="toolchain-side">
+        <div class="eyebrow">标准与工具</div>
+        <h3>支撑工具链</h3>
+        <p>我遵循的标准、使用的 CAD，以及跨岗位带来的能力。</p>
+      </aside>
+
+      <div class="toolchain-grid">
+        <div class="tc-block">
+          <h4>安全与合规 <span class="count">6</span></h4>
+          <ul>
+            <li>EN / IEC 61508</li>
+            <li>BS EN 60204-1</li>
+            <li>CE / UKCA / EMC</li>
+            <li>ISO / IEC</li>
+            <li>WERS</li>
+            <li>AIM2</li>
+          </ul>
+        </div>
+        <div class="tc-block">
+          <h4>CAD 与软件 <span class="count">5</span></h4>
+          <ul>
+            <li>EPLAN</li>
+            <li>AutoCAD</li>
+            <li>电气 CAD</li>
+            <li>NI Multisim</li>
+            <li>SolidWorks（基础）</li>
+          </ul>
+        </div>
+        <div class="tc-block">
+          <h4>工程能力 <span class="count">13</span></h4>
+          <ul>
+            <li>电气 / 低压 / 控制柜设计</li>
+            <li>原理图和接线图</li>
+            <li>需求捕获</li>
+            <li>验证与确认 (V&amp;V)</li>
+            <li>DFM</li>
+            <li>DFMEA / 风险评估</li>
+            <li>技术文档</li>
+            <li>设计评审</li>
+            <li>调试</li>
+            <li>安装支持</li>
+            <li>变更控制</li>
+            <li>利益相关方管理</li>
+            <li>抗辐射 design</li>
+          </ul>
+        </div>
+        <div class="tc-block">
+          <h4>业务与语言</h4>
+          <ul>
+            <li>MS Office</li>
+            <li>SAP</li>
+            <li class="tc-languages">
+              语言：英语（母语）· 葡萄牙语（流利）· 西班牙语（会话）
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="section">
+  <div class="shell">
+    <div class="eyebrow">教育</div>
+    <h2 class="section-title">横跨两所大学的工程教育。</h2>
+    <p class="section-lede">电气与能源工程本科学习；深圳国际高中教育。</p>
+
+    <div class="education-list">
+      <div class="edu">
+        <div class="e-span">2013 — 2016</div>
+        <div class="e-degree">电气与电子工程荣誉工学学士</div>
+        <div class="e-inst">University of Brighton</div>
+      </div>
+      <div class="edu">
+        <div class="e-span">2010 — 2013</div>
+        <div class="e-degree">能源工程工学学士（课程已完成）</div>
+        <div class="e-inst">Penn State</div>
+      </div>
+      <div class="edu">
+        <div class="e-span">2006 — 2010</div>
+        <div class="e-degree">国际文凭 / 高中文凭</div>
+        <div class="e-inst">Shenzhen International School</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="shell">
+    <div class="footer-grid">
+      <div>
+        <h6>身份</h6>
+        <div class="f-name">Diego Suarez</div>
+        <div class="f-role">电气系统设计工程师 · 英格兰班伯里</div>
+        <p class="f-positioning">我为那些一旦失效就会代价高昂、危险，或难以接近的环境设计电气系统。</p>
+      </div>
+      <div>
+        <h6>联系方式</h6>
+        <a href="https://linkedin.com/in/1diegosuarez" target="_blank" rel="noopener noreferrer">linkedin.com/in/1diegosuarez</a>
+        <div class="f-note">电子邮箱见下载的英文简历。</div>
+      </div>
+      <div>
+        <h6>文档</h6>
+        <a class="f-cta" href="../Diego_Suarez_CV.pdf" download="Diego_Suarez_CV.pdf">下载英文简历 <span class="arrow">↓</span></a>
+      </div>
+    </div>
+    <div class="footer-mark">
+      <span>Systems Under Tension · Diego Suarez · 2026</span>
+      <span>单页</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var ids = ["top", "experience", "expertise", "toolchain", "education"];
+  var navLinks = document.querySelectorAll(".nav-links a");
+
+  function setActive(id) {
+    var targetId = id === "top" ? "experience" : id;
+    navLinks.forEach(function (a) {
+      a.classList.toggle("active", a.getAttribute("href") === "#" + targetId);
+    });
+  }
+
+  if ("IntersectionObserver" in window) {
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) setActive(e.target.id);
+      });
+    }, { rootMargin: "-30% 0px -55% 0px", threshold: 0 });
+    ids.forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) obs.observe(el);
+    });
+  }
+
+  // Set initial active state for the first real nav section in view.
+  var activeId = null;
+  for (var i = ids.length - 1; i >= 1; i--) {
+    var el = document.getElementById(ids[i]);
+    if (el && el.getBoundingClientRect().top < window.innerHeight * 0.5) {
+      activeId = ids[i];
+      break;
+    }
+  }
+  setActive(activeId || ids[1]);
+
+  document.querySelectorAll("[data-jump]").forEach(function (link) {
+    link.addEventListener("click", function (ev) {
+      var id = link.getAttribute("data-jump");
+      var el = document.getElementById(id);
+      if (!el) return;
+      ev.preventDefault();
+      var top = el.getBoundingClientRect().top + window.scrollY - 80;
+      window.scrollTo({ top: top, behavior: "smooth" });
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
